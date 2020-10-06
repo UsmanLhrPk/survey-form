@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cabin+Sketch:wght@400;700&family=Courgette&display=swap" rel="stylesheet">
   <title>Survey Form</title>
 </head>
 <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <div id="header">
-    <h1 id="title"></h1>
-    <h3 id="description"></h3>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
   </div>
   <div id="form">
     <form id="survey-form">
       <label for="name" id="name-label">Name</label><br>
       <input type="text" id="name" placeholder="Pleaes enter Name" required><br>
       <label for="email" id="email-label">Email</label><br>
-      <input type="email" id="email" placeholder="Please enter Email"><br>
+      <input type="email" id="email" placeholder="Please enter Email" required><br>
       <label for="age" id="number-label">Age <small>(Optional)</small></label><br>
       <input type="number" id="number" placeholder="Please enter your age" min="18" max="90"><br>
       <label for="role" id="role-label">What option best defines your current role?</label><br>
@@ -24,15 +27,15 @@
         <option value="full-time-learner">Full Time Learner</option>
         <option value="prefer-not-say">Prefer not to say</option>
         <option value="other">Other</option>
-      </select>><br>
+      </select><br>
       <label for="recommendation" id="recommend-label">Would you reccomend freeCodeCamp to a friend?</label><br>
-      <input type="radio" id="definitely">
+      <input type="radio" id="definitely" value="def" name="user-recommend">
       <label for="definitely" id="definitely-label" value="yes">Definitely</label><br>
-      <input type="radio" id="maybe" value="maybe">
+      <input type="radio" id="maybe" value="maybe" name="user-recommend">
       <label for="maybe" id="maybe-label">Maybe</label><br>
-      <input type="radio" id="not-sure" value="not-sure">
+      <input type="radio" id="not-sure" value="not-sure" name="user-recommend">
       <label for="not-sure" id="not-sure-label">Not Sure</label><br>
-      <label for="fav-feature" id="fav-feature">What is your favourite feature of feeCodeCamp</label><br>
+      <label for="fav-feature" id="fav-feature">What is your favourite feature of freeCodeCamp</label><br>
       <select id="fav-feature-options">
         <option value="" selected="" disabled="">Select an option</option>
         <option value="challanges">Challanges</option>
